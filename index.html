@@ -380,7 +380,6 @@ This Codepen Project is meant for Learning Purposes only and must not be used fo
             </div>
         </section><!-- End Call To Action Section -->
 
-
         <section id="skills">
             <div class="container" data-aos="fade-up">
         
@@ -405,9 +404,6 @@ This Codepen Project is meant for Learning Purposes only and must not be used fo
                         <div class="skill-item bg-danger" data-aos="fade-up" data-aos-delay="400">
                             <span class="skill">Bootstrap</span>
                         </div>
-                    </div>
-        
-                    <div class="skill-row">
                         <div class="skill-item" style="background-color:#20c997;" data-aos="fade-up" data-aos-delay="100">
                             <span class="skill">JavaScript</span>
                         </div>
@@ -420,9 +416,6 @@ This Codepen Project is meant for Learning Purposes only and must not be used fo
                         <div class="skill-item" style="background-color:#ff3f0e;" data-aos="fade-up" data-aos-delay="400">
                             <span class="skill">PHP</span>
                         </div>
-                    </div>
-        
-                    <div class="skill-row">
                         <div class="skill-item" style="background-color:#4376c7;" data-aos="fade-up" data-aos-delay="100">
                             <span class="skill">PYTHON</span>
                         </div>
@@ -433,7 +426,7 @@ This Codepen Project is meant for Learning Purposes only and must not be used fo
                             <span class="skill">AWS</span>
                         </div>
                         <div class="skill-item" style="background-color:#1a2547;" data-aos="fade-up" data-aos-delay="400">
-                            <span class="skill">Adobe XD • UI/UX</span>
+                            <span class="skill">Adobe </span>
                         </div>
                     </div>
         
@@ -441,7 +434,6 @@ This Codepen Project is meant for Learning Purposes only and must not be used fo
         
             </div>
         </section>
-
 
         <!-- ======= Facts Section ======= -->
         <section id="facts">
@@ -943,8 +935,8 @@ This Codepen Project is meant for Learning Purposes only and must not be used fo
     });
     </script>
 
-    <style>
-.skills-content {
+<style>
+    .skills-content {
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -975,12 +967,10 @@ This Codepen Project is meant for Learning Purposes only and must not be used fo
         }
         50% {
             transform: translateY(-5px) scale(1.05);
-            /* background-color: #343a40; */
             color: #000000;
         }
         100% {
             transform: translateY(-10px) scale(1.1);
-            /* background-color: #343a40; */
             color: #000000;
         }
     }
@@ -991,10 +981,16 @@ This Codepen Project is meant for Learning Purposes only and must not be used fo
     }
     @media (max-width: 480px) {
         .skill-item {
-            flex: 1 1 100%;
+            flex: 1 1 calc(50% - 20px);
+        }
+        .skill-row {
+            flex-wrap: nowrap; /* Evita que se envuelvan en una nueva línea */
+            overflow-x: auto; /* Permite desplazarse horizontalmente */
+            gap: 10px; /* Espacio entre las habilidades */
+            padding-bottom: 10px; /* Añade un espacio inferior */
         }
     }
-    </style>
+</style>
 
 </body>
 
